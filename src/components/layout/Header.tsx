@@ -29,10 +29,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-[#006283] hover:text-[#023e8a] transition-colors">
+            <Link to="/" className="text-[#006283] hover:text-[#023e8a] transition-colors font-mono">
               Inicio
             </Link>
-            <Link to="/" className="text-[#006283] hover:text-[#023e8a] transition-colors">
+            <Link to="/" className="text-[#006283] hover:text-[#023e8a] transition-colors font-mono">
               Características
             </Link>
             <Link to="/" className="text-[#006283] hover:text-[#023e8a] transition-colors">

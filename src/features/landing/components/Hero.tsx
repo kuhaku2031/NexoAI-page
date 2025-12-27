@@ -29,15 +29,15 @@ const HeroSection = () => {
           {/* Left: Text Content */}
           <div className="space-y-8 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#023e8a] to-[#2584b7] text-white backdrop-blur-sm rounded-full shadow-lg animate-pulse">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white backdrop-blur-sm rounded-full shadow-lg animate-pulse">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-semibold">Beta Disponible | 1 Mes Gratis</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-[#002a52]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               Gestiona tu negocio con{" "}
-              <span className="bg-gradient-to-r from-[#023e8a] via-[#2584b7] to-[#48cae4] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                 Inteligencia Artificial
               </span>
             </h1>
@@ -45,7 +45,7 @@ const HeroSection = () => {
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-[#006283] leading-relaxed max-w-2xl">
               NexoAI combina POS, inventario y análisis inteligente en una sola plataforma. Sé de los primeros en usar
-              nuestra plataforma y obtén <span className="font-bold text-[#023e8a]">acceso gratuito durante 1 mes</span>
+              nuestra plataforma y obtén <span className="font-bold text-ocean">acceso gratuito durante 1 mes</span>
               .
             </p>
 
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Link to="/" >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-[#023e8a] to-[#2584b7] hover:from-[#002a52] hover:to-[#006283] text-white shadow-xl hover:shadow-2xl transition-all text-base relative overflow-hidden group"
+                  className="bg-gradient-to-r from-primary to-secondary hover:from-abyss hover:to-reef text-white shadow-xl hover:shadow-2xl transition-all text-base relative overflow-hidden group"
                 >
                   <span className="relative z-10 flex items-center">
                     <Download className="w-5 h-5 mr-2" />
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-300 hover:bg-gray-50 text-base bg-transparent"
+                className="flex items-center justify-center text-accent bg-background hover:bg-linear-to-r hover:from-primary hover:to-secondary hover:border-transparent hover:text-input shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 "
               >
                 <Play className="w-5 h-5 mr-2" />
                 Ver Demo
@@ -76,8 +76,8 @@ const HeroSection = () => {
             {/* Social Proof */}
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-4 justify-center lg:justify-start">
               <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-[#002a52]">150+</span>
-                <span className="text-sm text-[#006283]">beta testers</span>
+                <span className="text-2xl font-bold text-abyss">150+</span>
+                <span className="text-sm text-reef">beta testers</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="flex">
@@ -95,10 +95,12 @@ const HeroSection = () => {
             </div>
 
             {/* Urgency Message */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-lg">
-              <span className="text-sm text-amber-900">
+            <div className="inline-flex items-center bg-background rounded-lg">
+            <div className="gap-2 px-4 bg-warning/5 py-2 border border-warning rounded-lg">
+              <span className="text-sm text-warning">
                 ⚡ Solo <span className="font-bold">50 espacios</span> disponibles para acceso anticipado
               </span>
+            </div>
             </div>
           </div>
 
@@ -158,13 +160,13 @@ const HeroSection = () => {
                 <DollarSign className="w-6 h-6 text-green-600" />
               </div>
               <div className="absolute -left-4 top-40 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg animate-float delay-300">
-                <BarChart3 className="w-6 h-6 text-[#2584b7]" />
+                <BarChart3 className="w-6 h-6 text-chart-1" />
               </div>
               <div className="absolute -right-8 bottom-32 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg animate-float delay-700">
-                <Brain className="w-6 h-6 text-[#023e8a]" />
+                <Brain className="w-6 h-6 text-chart-2" />
               </div>
               <div className="absolute -left-8 bottom-48 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg animate-float delay-500">
-                <Package className="w-6 h-6 text-[#48cae4]" />
+                <Package className="w-6 h-6 text-chart-3" />
               </div>
             </div>
           </div>
