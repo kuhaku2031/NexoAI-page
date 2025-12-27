@@ -6,7 +6,6 @@
     "noEmit": true,
     "skipLibCheck": true,
     "useDefineForClassFields": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     },

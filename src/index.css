@@ -75,6 +75,40 @@
 }
 
 @theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  /* Nueva paleta de colores NexoAI basada en azules */
+  /* Colores principales */
+  --color-primary: #023e8a;
+  --color-secondary: #2584b7;
+  --color-accent: #002a52;
+
+  /* Colores claros */
+  --color-light-primary: #e4f5fb;
+  --color-light-secondary: #90e0ef;
+
+  /* Backgrounds */
+  --color-bg-light: #90e0ef;
+  --color-bg-light-secondary: #e9f1fb;
+  --color-bg-light-accent: #d8ecf4;
+  --color-bg-dark: #002a52;
+  --color-bg-dark-secondary: #006283;
+
+  /* Text colors */
+  --color-text-primary: #002a52;
+  --color-text-secondary: #006283;
+
+  /* Status colors */
+  --color-success: #34c759;
+  --color-warning: #ff9500;
+  --color-error: #ff3b30;
+  --color-info: #48cae4;
+
+  /* Otros */
+  --color-disabled: #90e0ef;
+  --color-yellow-400: #facc15;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -120,4 +154,50 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Animaciones personalizadas para NexoAI */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
 }
