@@ -12,24 +12,16 @@ const HeroSection = () => {
 
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#e4f5fb] via-[#90e0ef] to-[#d8ecf4]"
+      className="relative min-h-screen flex items-center overflow-hidden bg-linear-to-br from-sky-light via-mist to-wave"
     >
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#2584b7]/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#023e8a]/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#48cae4]/20 rounded-full blur-3xl animate-pulse delay-500" />
 
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text Content */}
           <div className="space-y-8 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white backdrop-blur-sm rounded-full shadow-lg animate-pulse">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-primary to-secondary text-pearl backdrop-blur-sm rounded-full shadow-lg animate-pulse">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-semibold">Beta Disponible | 1 Mes Gratis</span>
             </div>
@@ -37,13 +29,13 @@ const HeroSection = () => {
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               Gestiona tu negocio con{" "}
-              <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
                 Inteligencia Artificial
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-[#006283] leading-relaxed max-w-2xl">
+            <p className="text-lg sm:text-xl text-reef leading-relaxed max-w-2xl">
               NexoAI combina POS, inventario y análisis inteligente en una sola plataforma. Sé de los primeros en usar
               nuestra plataforma y obtén <span className="font-bold text-ocean">acceso gratuito durante 1 mes</span>
               .
@@ -54,13 +46,13 @@ const HeroSection = () => {
               <Link to="/" >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-primary to-secondary hover:from-abyss hover:to-reef text-white shadow-xl hover:shadow-2xl transition-all text-base relative overflow-hidden group"
+                  className="bg-linear-to-r from-primary to-secondary hover:from-abyss hover:to-reef  shadow-xl hover:shadow-2xl transition-all text-base relative overflow-hidden group duration-300 hover:-translate-y-1 hover:scale-105"
                 >
                   <span className="relative z-10 flex items-center">
                     <Download className="w-5 h-5 mr-2" />
                     Acceder a la Beta Gratis
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#2584b7] to-[#48cae4] opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-r from-sky to-wave opacity-0 group-hover:opacity-100"/>
                 </Button>
               </Link>
               <Button
@@ -107,12 +99,12 @@ const HeroSection = () => {
           {/* Right: Visual/Mockup */}
           <div className="relative">
             {/* Phone Mockup Container */}
-            <div className="relative mx-auto w-[280px] sm:w-[320px] h-[560px] sm:h-[640px]">
+            <div className="relative mx-auto w-70 sm:w-[320px] h-140 sm:h-160">
               {/* Phone Frame */}
               <div className="absolute inset-0 bg-gray-900 rounded-[3rem] shadow-2xl p-3">
                 <div className="bg-white rounded-[2.5rem] h-full overflow-hidden">
                   {/* Mockup Content */}
-                  <div className="h-full bg-gradient-to-br from-gray-50 to-white p-6 space-y-4">
+                  <div className="h-full bg-linear-to-br from-gray-50 to-white p-6 space-y-4">
                     <div className="flex items-center justify-between">
                       <div className="text-sm font-semibold text-[#002a52]">Dashboard</div>
                       <div className="w-8 h-8 bg-[#023e8a] rounded-full flex items-center justify-center">
@@ -121,12 +113,12 @@ const HeroSection = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-xl border border-green-200">
+                      <div className="bg-linear-to-br from-green-50 to-green-100 p-4 rounded-xl border border-green-200">
                         <DollarSign className="w-6 h-6 text-green-600 mb-2" />
                         <div className="text-xs text-green-700">Ventas Hoy</div>
                         <div className="text-lg font-bold text-green-900">$2,450</div>
                       </div>
-                      <div className="bg-gradient-to-br from-[#e4f5fb] to-[#90e0ef] p-4 rounded-xl border border-[#2584b7]/30">
+                      <div className="bg-linear-to-br from-[#e4f5fb] to-[#90e0ef] p-4 rounded-xl border border-[#2584b7]/30">
                         <BarChart3 className="w-6 h-6 text-[#023e8a] mb-2" />
                         <div className="text-xs text-[#006283]">Productos</div>
                         <div className="text-lg font-bold text-[#002a52]">145</div>
@@ -139,14 +131,14 @@ const HeroSection = () => {
                         {[40, 60, 45, 75, 55, 85, 65].map((height, i) => (
                           <div
                             key={i}
-                            className="flex-1 bg-gradient-to-t from-[#023e8a] to-[#2584b7] rounded-t"
+                            className="flex-1 bg-linear-to-t from-[#023e8a] to-[#2584b7] rounded-t"
                             style={{ height: `${height}%` }}
                           />
                         ))}
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-[#023e8a] to-[#2584b7] rounded-xl p-4 text-white">
+                    <div className="bg-linear-to-r from-[#023e8a] to-[#2584b7] rounded-xl p-4 text-white">
                       <Brain className="w-6 h-6 mb-2" />
                       <div className="text-xs opacity-90 mb-1">Insight de IA</div>
                       <div className="text-sm font-medium">Tus ventas aumentaron 23% esta semana</div>
