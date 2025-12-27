@@ -18,6 +18,14 @@
 
   /* ==================== BRAND COLORS ==================== */
 
+  /* Pearl (Blanco perla - #e8eae6) */
+  --pearl: oklch(0.9344 0.0057 128.53);
+  --pearl-foreground: oklch(0.35 0.1 220);
+
+  /* Sky Light (Azul muy muy claro - #e4f5fb) */
+  --sky-light: oklch(0.9593 0.0197 220.86);
+  --sky-light-foreground: oklch(0.35 0.1 220);  
+
   /* Mist (Azul muy claro - #90e0ef) */
   --mist: oklch(0.8603 0.0809 210.7);
   --mist-foreground: oklch(0.35 0.1 220);
@@ -68,12 +76,11 @@
   --destructive-foreground: oklch(1 0 0);
 
   --error: oklch(0.6542 0.2321 28.66); /* #FF3B30 */
-  
+
   --error-foreground: oklch(1 0 0);
 
   --warning: oklch(0.7652 0.1752 62.57); /* #FF9500 */
-  --warning-background: oklch(0.7652 0.1752 62.57 / 85%);
-  --warning-foreground: oklch(0.15 0.15 220);
+  --warning-foreground: oklch(1 0 0);
 
   --success: oklch(0.7303 0.1944 147.44); /* #34C759 */
   --success-foreground: oklch(1 0 0);
@@ -91,13 +98,13 @@
   --chart-5: var(--mist); /* #90e0ef */
 
   /* ==================== SIDEBAR ==================== */
-  --sidebar: oklch(0.98 0.01 220);
-  --sidebar-foreground: oklch(0.15 0.15 220);
+  --sidebar: oklch(--pearl);
+  --sidebar-foreground: oklch(--foreground);
   --sidebar-primary: var(--ocean);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary-foreground: oklch(--pearl);
   --sidebar-accent: var(--wave);
-  --sidebar-accent-foreground: oklch(0.15 0.15 220);
-  --sidebar-border: oklch(0.88 0.03 220);
+  --sidebar-accent-foreground: oklch(--foreground);
+  --sidebar-border: oklch(--sky-light);
   --sidebar-ring: oklch(0.25 0.15 220 / 0.5);
 
   /* ==================== RADIUS ==================== */
@@ -130,6 +137,9 @@
 
   --destructive: oklch(0.5 0.2 25);
   --destructive-foreground: oklch(0.96 0.02 220);
+
+
+
 
   --border: oklch(0.25 0.12 220);
   --input: oklch(0.25 0.12 220);
@@ -178,14 +188,31 @@
   --color-destructive-foreground: var(--destructive-foreground);
 
   /* Brand Colors (para usar como bg-ocean, text-sky, etc.) */
-  --color-ocean: var(--ocean);
-  --color-ocean-foreground: var(--ocean-foreground);
-  --color-sky: var(--sky);
-  --color-sky-foreground: var(--sky-foreground);
-  --color-wave: var(--wave);
-  --color-wave-foreground: var(--wave-foreground);
+
+  --color-pearl: var(--pearl);
+  --color-pearl-foreground: var(--pearl-foreground);
+  
+  --color-sky-light: var(--sky-light);
+  --color-sky-light-foreground: var(--sky-light-foreground);
+
   --color-mist: var(--mist);
   --color-mist-foreground: var(--mist-foreground);
+
+    --color-wave: var(--wave);
+  --color-wave-foreground: var(--wave-foreground);
+
+  --color-sky: var(--sky);
+  --color-sky-foreground: var(--sky-foreground);
+
+  --color-ocean: var(--ocean);
+  --color-ocean-foreground: var(--ocean-foreground);
+
+  --color-reef: var(--reef);
+  --color-reef-foreground: var(--reef-foreground);
+
+  --color-abyss: var(--abyss);
+  --color-abyss-foreground: var(--abyss-foreground);
+
   --color-deep: var(--deep);
   --color-deep-foreground: var(--deep-foreground);
 
