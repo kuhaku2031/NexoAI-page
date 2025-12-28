@@ -54,10 +54,10 @@ export function DemoShowcase() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#002a52] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-abyss mb-4">
             Una plataforma completa para tu negocio
           </h2>
-          <p className="text-lg text-[#006283] max-w-2xl mx-auto">
+          <p className="text-lg text-reef max-w-2xl mx-auto">
             Todas las herramientas que necesitas en una interfaz simple e intuitiva
           </p>
         </div>
@@ -72,8 +72,8 @@ export function DemoShowcase() {
                   onClick={() => setActiveDemo(demo.id)}
                   className={`w-full text-left p-5 rounded-xl border-2 transition-all duration-300 ${
                     activeDemo === demo.id
-                      ? "border-[#023e8a] bg-linear-to-br from-blue-50 to-cyan-50 shadow-lg"
-                      : "border-gray-200 bg-white hover:border-[#2584b7] hover:shadow-md"
+                      ? "border-primary bg-linear-to-br from-blue-50 to-cyan-50 shadow-lg"
+                      : "border-gray-200 bg-white hover:border-secondary hover:shadow-md"
                   }`}
                 >
                   <div className="flex items-start gap-4">
@@ -83,8 +83,8 @@ export function DemoShowcase() {
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base font-bold text-[#002a52] mb-1">{demo.title}</h3>
-                      <p className="text-sm text-[#006283] leading-relaxed">{demo.description}</p>
+                      <h3 className="text-base font-bold text-abyss mb-1">{demo.title}</h3>
+                      <p className="text-sm text-reef leading-relaxed">{demo.description}</p>
                     </div>
                   </div>
                 </button>
@@ -97,9 +97,9 @@ export function DemoShowcase() {
               <div className="bg-linear-to-br from-gray-50 to-blue-50 border-b border-gray-200 p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-error"></div>
+                    <div className="w-3 h-3 rounded-full bg-warning"></div>
+                    <div className="w-3 h-3 rounded-full bg-success"></div>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
